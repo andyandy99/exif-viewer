@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片EXIF信息查看器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>图片EXIF信息查看器</h1>
+        
+        <div class="upload-container">
+            <input type="file" id="imageInput" accept="image/*" class="file-input">
+            <label for="imageInput" class="upload-label">
+                选择图片或拖放图片到这里
+            </label>
+        </div>
+
+        <div class="preview-container">
+            <img id="preview" class="hidden">
+        </div>
+
+        <div id="exifInfo" class="exif-container hidden">
+            <h2>EXIF信息</h2>
+            <div class="exif-grid" id="exifData"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
